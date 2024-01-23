@@ -16,3 +16,4 @@ The rest call returns the book with null title, apparently violating constarint 
 
 
 Make the rest call below to check that the field title has not been updated
+curl -X GET  "http://localhost:8080/book/101" -H "accept: */*"  --header 'Content-Type: application/json'
